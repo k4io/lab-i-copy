@@ -9,7 +9,6 @@
 */
 
 //Local includes
-#include "Structs.hpp"
 #include "Node.h"
 
 //Standard includes

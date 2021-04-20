@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 #include <vector>
+#include "Structs.hpp"
+
 using namespace std;
 
 class Node {

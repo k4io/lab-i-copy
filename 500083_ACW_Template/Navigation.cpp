@@ -9,6 +9,7 @@ using namespace std;
 
 Navigation::Navigation() : _outFile("Output.txt")
 {
+	LOG_ENTRY_EXIT;
 }
 
 Navigation::~Navigation()
@@ -17,6 +18,7 @@ Navigation::~Navigation()
 
 TransportMode Navigation::determineTransportMode(string mode) 
 {
+	LOG_ENTRY_EXIT;
 	if (mode.find("Foot") != string::npos) { return TransportMode::Foot; }
 	else if (mode.find("Bike") != string::npos) { return TransportMode::Bike; }
 	else if (mode.find("Car") != string::npos) { return TransportMode::Car; }
@@ -27,6 +29,7 @@ TransportMode Navigation::determineTransportMode(string mode)
 
 Node* Navigation::determineNode(int ref)
 {
+	LOG_ENTRY_EXIT;
 	for (size_t i = 0; i < v_Nodes.size(); i++)
 		if (v_Nodes[i]->GetRefNum() == ref)
 			return v_Nodes[i];
@@ -35,6 +38,7 @@ Node* Navigation::determineNode(int ref)
 
 void Navigation::parsePlaces(fstream* in, vector<Node*>* nv_Places)
 {
+	LOG_ENTRY_EXIT;
 	if (in->is_open())
 	{
 		while (!in->eof())
@@ -73,6 +77,7 @@ void Navigation::parsePlaces(fstream* in, vector<Node*>* nv_Places)
 
 void Navigation::parseLinks(fstream* in, vector<Arc*>* nv_Links)
 {
+	LOG_ENTRY_EXIT;
 	if (in->is_open())
 	{
 		while (!in->eof())
@@ -105,6 +110,7 @@ void Navigation::parseLinks(fstream* in, vector<Arc*>* nv_Links)
 
 bool Navigation::ProcessCommand(const string& commandString)
 {
+	LOG_ENTRY_EXIT;
 	istringstream inString(commandString);
 	string command;
 	inString >> command;
@@ -116,6 +122,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 bool Navigation::BuildNetwork(const string &fileNamePlaces, const string &fileNameLinks)
 {
+	LOG_ENTRY_EXIT;
 	m_node = NULL;
 	fstream finPlaces(fileNamePlaces);
 	fstream finLinks(fileNameLinks);

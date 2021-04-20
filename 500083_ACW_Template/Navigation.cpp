@@ -9,7 +9,6 @@ using namespace std;
 
 Navigation::Navigation() : _outFile("Output.txt")
 {
-	LOG_ENTRY_EXIT;
 }
 
 Navigation::~Navigation()
@@ -18,7 +17,6 @@ Navigation::~Navigation()
 
 TransportMode Navigation::determineTransportMode(string mode) 
 {
-	LOG_ENTRY_EXIT;
 	if (mode.find("Foot") != string::npos) { return TransportMode::Foot; }
 	else if (mode.find("Bike") != string::npos) { return TransportMode::Bike; }
 	else if (mode.find("Car") != string::npos) { return TransportMode::Car; }
@@ -29,7 +27,6 @@ TransportMode Navigation::determineTransportMode(string mode)
 
 Node* Navigation::determineNode(int ref)
 {
-	LOG_ENTRY_EXIT;
 	for (size_t i = 0; i < v_Nodes.size(); i++)
 		if (v_Nodes[i]->GetRefNum() == ref)
 			return v_Nodes[i];
@@ -38,7 +35,6 @@ Node* Navigation::determineNode(int ref)
 
 void Navigation::parsePlaces(fstream* in, vector<Node*>* nv_Places)
 {
-	LOG_ENTRY_EXIT;
 	if (in->is_open())
 	{
 		while (!in->eof())
@@ -77,7 +73,6 @@ void Navigation::parsePlaces(fstream* in, vector<Node*>* nv_Places)
 
 void Navigation::parseLinks(fstream* in, vector<Arc*>* nv_Links)
 {
-	LOG_ENTRY_EXIT;
 	if (in->is_open())
 	{
 		while (!in->eof())
@@ -110,19 +105,67 @@ void Navigation::parseLinks(fstream* in, vector<Arc*>* nv_Links)
 
 bool Navigation::ProcessCommand(const string& commandString)
 {
-	LOG_ENTRY_EXIT;
+	/*
+	MaxDist
+	MaxLink
+	FindDist 9361783 11391765
+	FindNeighbour 8611522
+	Check Rail 14601225 12321385 8611522 9361783
+	Check Ship 14601225 12321385 8611522 9361783
+	FindRoute Rail 9081958 15832241
+	FindRoute Ship 9081958 15832241
+	FindShortestRoute Rail 9081958 15832241
+	FindShortestRoute Ship 9081958 15832241
+	*/
 	istringstream inString(commandString);
 	string command;
 	inString >> command;
 
-	// Add your code here
+	if (command.find("MaxDist") != string::npos)
+	{
+
+	}
+	else if (command.find("MaxLink") != string::npos) {
+
+	}
+	else if (command.find("FindDist") != string::npos) {
+		string params = commandString.substr(9, commandString.size());
+		int startingReference = stoi(params.substr(0, params.find(" ")));
+		int destinationReference = stoi(params.substr(params.find(" "), params.size()));
+		Node* startingNode{};
+		Node* destinationNode{};
+		for (size_t i = 0; i < v_Nodes.size(); i++)
+		{
+			if (v_Nodes[i]->GetRefNum() == startingReference)
+			{	startingNode = v_Nodes[i];	}
+
+			if (v_Nodes[i]->GetRefNum() == destinationReference)
+			{	destinationNode = v_Nodes[i];	}
+
+			if (startingNode && destinationNode)
+				break;
+		} 
+
+
+	}
+	else if (command.find("FindNeighbour") != string::npos) {
+
+	}
+	else if (command.find("Check") != string::npos) {
+
+	}
+	else if (command.find("FindRoute") != string::npos) {
+
+	}
+	else if (command.find("FindShortestRoute") != string::npos) {
+
+	}
 
 	return false;
 }
 
 bool Navigation::BuildNetwork(const string &fileNamePlaces, const string &fileNameLinks)
 {
-	LOG_ENTRY_EXIT;
 	m_node = NULL;
 	fstream finPlaces(fileNamePlaces);
 	fstream finLinks(fileNameLinks);

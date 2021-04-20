@@ -48,6 +48,11 @@ public:
 	Node* getDest();
 
 	/// <summary>
+	/// Function to retrieve length of arc.
+	/// </summary>
+	int* getLength();
+
+	/// <summary>
 	/// Function to set transport mode.
 	/// </summary>
 	/// <param name="_t">Required transport mode</param>
@@ -65,10 +70,15 @@ public:
 	/// <param name="_n">Required destination node</param>
 	void setDest(Node* _n);
 
-
+	/// <summary>
+	/// Function to set length.
+	/// </summary>
+	/// <param name="_n">Required length</param>
+	void setLen(int* _n);
 
 private:
 	TransportMode t_Mode;	//Transport mode
 	Node* n_Origin;			//Origin destination node
 	Node* n_Dest;			//Destination node
+	int* length;			//Length of arc
 };

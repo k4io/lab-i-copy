@@ -9,8 +9,6 @@ class Navigation
 {
 	std::ofstream _outFile;
 
-	// Add your code here
-
 public:
 	Navigation();
 	~Navigation();
@@ -22,7 +20,6 @@ public:
 	Node* determineNode(int ref);
 	TransportMode determineTransportMode(string mode);
 
-	// Add your code here
 private:
 	Node* m_node;
 	Arc* m_arc;

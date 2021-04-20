@@ -2,6 +2,7 @@
 
 #include <fstream>
 #include <string>
+#include "Node.h"
 
 class Navigation
 {
@@ -17,4 +18,6 @@ public:
 	bool ProcessCommand(const std::string& commandString);
 
 	// Add your code here
+private:
+	Node* m_node;
 };

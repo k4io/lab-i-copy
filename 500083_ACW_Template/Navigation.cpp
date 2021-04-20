@@ -32,10 +32,6 @@ bool Navigation::BuildNetwork(const string &fileNamePlaces, const string &fileNa
 	fstream finPlaces(fileNamePlaces);
 	fstream finLinks(fileNameLinks);
 	if (finPlaces.fail() || finLinks.fail()) return false;
-
-
-	double latitude = 53.770, longitude = -0.368, x, y;
-	LLtoUTM(latitude, longitude, x, y);
 	
 	vector<Node*> m_place;
 	if (finPlaces.is_open())

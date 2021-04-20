@@ -2,17 +2,41 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Navigation.cpp" />
-    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Navigation.cpp">
+      <Filter>Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Arc.cpp">
+      <Filter>Arc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ACW_Wrapper.h" />
-    <ClInclude Include="Navigation.h" />
-    <ClInclude Include="Node.h" />
+    <ClInclude Include="Navigation.h">
+      <Filter>Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Arc.h">
+      <Filter>Arc</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Input_Files">
       <UniqueIdentifier>{fc9c3f89-d8d3-4ac7-bf7a-11c84028130c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arc">
+      <UniqueIdentifier>{036edda0-6784-4334-b057-8418b4354bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Node">
+      <UniqueIdentifier>{d18f4700-6a36-4227-abc6-2b24ae552413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navigation">
+      <UniqueIdentifier>{b44a2cdb-1fbc-4e46-a846-5b1383d34b76}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

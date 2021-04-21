@@ -155,7 +155,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 		std::string output = "MaxDist\n"
 			+ lStart->GetPlaceName() + ", "
 			+ lFinish->GetPlaceName() + ", "
-			+ to_string(RoundTo(largest, 3));
+			+ to_string(RoundTo(largest, 3)) + "\n";
 
 		_outFile << output << endl;
 		return true;
@@ -180,6 +180,19 @@ bool Navigation::ProcessCommand(const string& commandString)
 			if (startingNode && destinationNode)
 				break;
 		}
+
+		double len = startingNode->GetDistanceTo(destinationNode);
+		
+		std::string _lstr = to_string(RoundTo((len / 1000), 3));
+		_lstr.erase(_lstr.find_last_not_of('0') + 1, std::string::npos);
+
+		std::string output = commandString + "\n"
+			+ startingNode->GetPlaceName() + ", "
+			+ destinationNode->GetPlaceName() + ", "
+			+ _lstr.c_str() + "\n";
+
+		_outFile << output << endl;
+		return true;
 	}
 	else if (command.find("FindNeighbour") != string::npos) {
 

@@ -1,7 +1,11 @@
 #include "Navigation.h"
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 #include <sstream>
+
+
+
 
 #include "ACW_Wrapper.h"
 
@@ -123,7 +127,22 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 	if (command.find("MaxDist") != string::npos)
 	{
+		double x1, x2, y1, y2, distanceX, distanceY, totaldsitance;
 
+		//going to iterate over the loop then work out the ester most point in the list and then the western most point in the list and calculate the distance between them.
+		//i want to get the lowest easting value or the lowest x value 
+		//needs to clycle throght to and fgidn the largest distance between two nodes 
+		for (size_t i = 0; i < v_Nodes.size(); i++)
+		{
+			x1 = v_Nodes[i]->GetX();
+			x2 = v_Nodes[i+1]->GetX();
+			y1 = v_Nodes[i]->GetY();
+			y2 = v_Nodes[i+1]->GetY();
+			distanceX = (x2 - x1) * (x2 - x1);
+			distanceY = (y2 - y1) * (y2 - y1);
+			totaldsitance = sqrt(distanceX + distanceY);
+			i++;
+		}
 	}
 	else if (command.find("MaxLink") != string::npos) {
 

@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <cmath>
 #include <sstream>
+#include <fstream>
 
 
 
@@ -17,6 +18,14 @@ Navigation::Navigation() : _outFile("Output.txt")
 
 Navigation::~Navigation()
 {
+	
+}
+
+double Navigation::RoundTo(double in, double decimalPlaces) 
+{
+	stringstream tmp;
+	tmp << setprecision(3) << fixed << in;
+	return stod(tmp.str());
 }
 
 TransportMode Navigation::determineTransportMode(string mode) 
@@ -127,22 +136,29 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 	if (command.find("MaxDist") != string::npos)
 	{
-		double x1, x2, y1, y2, distanceX, distanceY, totaldsitance;
-
-		//going to iterate over the loop then work out the ester most point in the list and then the western most point in the list and calculate the distance between them.
-		//i want to get the lowest easting value or the lowest x value 
-		//needs to clycle throght to and fgidn the largest distance between two nodes 
+		double largest = 0; 
+		Node* currentNode, * destinationNode, * lStart{}, * lFinish{};
 		for (size_t i = 0; i < v_Nodes.size(); i++)
 		{
-			x1 = v_Nodes[i]->GetX();
-			x2 = v_Nodes[i+1]->GetX();
-			y1 = v_Nodes[i]->GetY();
-			y2 = v_Nodes[i+1]->GetY();
-			distanceX = (x2 - x1) * (x2 - x1);
-			distanceY = (y2 - y1) * (y2 - y1);
-			totaldsitance = sqrt(distanceX + distanceY);
-			i++;
+			currentNode = v_Nodes[i];
+			for (size_t j = 0; j < v_Nodes.size(); j++)
+			{
+				destinationNode = v_Nodes[j];
+				if (currentNode->GetDistanceTo(destinationNode) > largest) 
+				{
+					lStart = currentNode, lFinish = destinationNode;
+					largest = currentNode->GetDistanceTo(destinationNode);
+				} else continue;
+			}
 		}
+
+		std::string output = "MaxDist\n"
+			+ lStart->GetPlaceName() + ", "
+			+ lFinish->GetPlaceName() + ", "
+			+ to_string(RoundTo(largest, 3));
+
+		_outFile << output << endl;
+		return true;
 	}
 	else if (command.find("MaxLink") != string::npos) {
 
@@ -163,9 +179,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 			if (startingNode && destinationNode)
 				break;
-		} 
-
-
+		}
 	}
 	else if (command.find("FindNeighbour") != string::npos) {
 

@@ -18,6 +18,7 @@ public:
 	int GetRefNum();
 	double GetX();
 	double GetY();
+	double GetDistanceTo(Node* ref);
 
 	//Setter
 	void SetPlaceName(string n);
@@ -29,6 +30,4 @@ private:
 	int m_ref;
 	double m_X;
 	double m_Y;
-	
-
 };

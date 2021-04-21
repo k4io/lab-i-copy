@@ -19,6 +19,7 @@ public:
 	void parseLinks(fstream* in, vector<Arc*>* nv_Links);
 	Node* determineNode(int ref);
 	TransportMode determineTransportMode(string mode);
+	double RoundTo(double in, double decimalPlaces);
 
 private:
 	Node* m_node;

@@ -39,6 +39,22 @@ double Node::GetY()
 	return m_Y;
 }
 
+double Node::GetDistanceTo(Node* ref)
+{
+	double x1, x2, y1, y2, dy, dx, total;
+	Node* n0 = this;
+	Node* n1 = ref;
+
+	x1 = n0->GetX();
+	x2 = n1->GetX();
+	y1 = n0->GetY();
+	y2 = n1->GetY();
+	dx = pow((x2 - x1), 2);
+	dy = pow((y2 - y1), 2);
+	total = sqrt(dx + dy);
+	return total;
+}
+
 void Node::SetPlaceName(string n)
 {
 	

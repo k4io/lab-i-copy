@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "Structs.hpp"
+#include "Arc.h"
 
 using namespace std;
 
@@ -19,6 +19,7 @@ public:
 	double GetX();
 	double GetY();
 	double GetDistanceTo(Node* ref);
+	Arc* getArc(int* locationReference);
 
 	//Setter
 	void SetPlaceName(string n);
@@ -26,6 +27,7 @@ public:
 	void SetX(double x);
 	void SetY(double y);
 private:
+	vector<Arc*> v_Links;
 	string m_name;
 	int m_ref;
 	double m_X;

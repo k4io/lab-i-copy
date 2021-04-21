@@ -108,7 +108,14 @@ void Navigation::parseLinks(fstream* in, vector<Arc*>* nv_Links)
 			Node* n_Destination = determineNode(i_Dest);
 			TransportMode _transportMode = determineTransportMode(transportModeStr);
 
-			m_arc = new Arc(_transportMode, n_Origin, n_Destination);
+			m_arc = new Arc(_transportMode, 
+				&n_Origin->m_X,
+				&n_Origin->m_Y,
+				&n_Destination->m_X,
+				&n_Destination->m_Y, 
+				&n_Origin->m_ref, 
+				&n_Destination->m_ref
+			);
 
 			nv_Links->push_back(m_arc);
 		}
@@ -160,9 +167,24 @@ bool Navigation::ProcessCommand(const string& commandString)
 		_outFile << output << endl;
 		return true;
 	}
-	else if (command.find("MaxLink") != string::npos) {
 
+	else if (command.find("MaxLink") != string::npos) {
+		int record = 0;
+		Arc* recordLink{};
+		for (size_t i = 0; i < v_Arcs.size(); i++)
+		{
+			if (v_Arcs[i]->getLength() > record)
+				recordLink = v_Arcs[i];
+		}
+
+		string outStr = "MaxLink\n";
+		outStr += to_string(*recordLink->_OriginRef) + ", "
+			+ to_string(*recordLink->_DestinationRef) + ", "
+			+ to_string(RoundTo(recordLink->length, 3)) + "\n";
+		_outFile << outStr << endl;
+		return true;
 	}
+
 	else if (command.find("FindDist") != string::npos) {
 		string params = commandString.substr(9, commandString.size());
 		int startingReference = stoi(params.substr(0, params.find(" ")));
@@ -194,11 +216,83 @@ bool Navigation::ProcessCommand(const string& commandString)
 		_outFile << output << endl;
 		return true;
 	}
+
 	else if (command.find("FindNeighbour") != string::npos) {
+		int startingReference = stoi(commandString.substr(
+									commandString.find(' '), 
+									commandString.size()));
+		vector<Node*> v_neighbors{};
+		
+		Node* startingNode = determineNode(startingReference);
 
+		for (size_t i = 0; i < startingNode->v_Links.size(); i++)
+		{
+			if (*startingNode->v_Links[i]->_OriginRef == startingReference) {
+				v_neighbors.push_back(
+					determineNode(
+						*startingNode->v_Links[i]->_DestinationRef
+					));
+			}
+			else
+				v_neighbors.push_back(
+					determineNode(
+						*startingNode->v_Links[i]->_OriginRef
+					));
+		}
+		std::string outStr = commandString + "\n";
+
+		for (size_t i = 0; i < v_neighbors.size(); i++)
+			outStr += to_string(v_neighbors[i]->m_ref) + "\n";
+		
+		_outFile << outStr << endl;
+		return true;
 	}
-	else if (command.find("Check") != string::npos) {
 
+	else if (command.find("Check") != string::npos) {
+		//Example:
+		//Check <mode> 14601225 12321385 8611522 9361783
+
+		string params = commandString.substr(6, commandString.size());
+		string strTMode = commandString.substr(0, params.find(' '));
+		TransportMode _mode{};
+		if (strTMode.find("Foot")) _mode = TransportMode::Foot;
+		if (strTMode.find("Bike")) _mode = TransportMode::Bike;
+		if (strTMode.find("Car"))  _mode = TransportMode::Car;
+		if (strTMode.find("Bus"))  _mode = TransportMode::Bus;
+		if (strTMode.find("Rail")) _mode = TransportMode::Rail;
+		if (strTMode.find("Ship")) _mode = TransportMode::Ship;
+
+		params = params.substr(4, params.size());
+
+		vector<Node*> targetDestinations{};
+
+		if (params[0] == ' ')
+			params = params.substr(1, params.size());
+
+		string str = params.substr(0, params.find(' '));
+
+		while (params.size() > 3)
+		{
+			string cid = params.substr(0, params.find(' '));
+			targetDestinations.push_back(
+				determineNode(
+					stoi(cid)
+					)
+			);
+			params = params.substr(cid.size(), params.size());
+			if (params[0] == ' ')
+				params = params.substr(1, params.size());
+		}
+
+		string strout = commandString + "\n";
+
+		for (size_t i = 0; i < targetDestinations.size(); i++)
+		{
+			for (size_t f = 0; f < targetDestinations[i]->v_Links.size(); f++)
+			{
+				//TO DO - DO THE THING HERE: https://i.imgur.com/jOP9ieo.png
+			}
+		}
 	}
 	else if (command.find("FindRoute") != string::npos) {
 
@@ -220,6 +314,26 @@ bool Navigation::BuildNetwork(const string &fileNamePlaces, const string &fileNa
 
 	parsePlaces(&finPlaces, &v_Nodes);
 	parseLinks(&finLinks, &v_Arcs);
+
+	vector<Node*> newNodes{};
+
+
+	//Iterate every arc for each node to determine if the arc has a reference to that node.
+	for (size_t i = 0; i < v_Nodes.size(); i++)
+	{
+		Node* newNode = v_Nodes[i];
+ 		for (size_t j = 0; j < v_Arcs.size(); j++)
+		{
+			if (*v_Arcs[j]->_OriginRef == v_Nodes[i]->m_ref
+				|| *v_Arcs[j]->_DestinationRef == v_Nodes[i]->m_ref)
+			{
+				newNode->v_Links.push_back(v_Arcs[j]);
+			}
+		}
+		newNodes.push_back(newNode);
+	}
+
+	v_Nodes = newNodes;
 
 	return true;
 }

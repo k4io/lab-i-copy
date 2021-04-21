@@ -8,8 +8,9 @@
 * 4. a foot journey may use any Arc.
 */
 
+
 //Local includes
-#include "Node.h"
+#include "Structs.hpp"
 
 //Standard includes
 #include <iostream>
@@ -19,13 +20,24 @@ using namespace structs;
 class Arc
 {
 public:
+	friend class Navigation;
 	/// <summary>
 	/// Constructor for arc class.
 	/// </summary>
-	/// <param name="_transport">Transport mode</param>
-	/// <param name="_Origin">Origin arc</param>
-	/// <param name="_Destination">Destination arc</param>
-	Arc(TransportMode _transport, Node* _Origin, Node* _Destination);
+	/// <param name="_transport"></param>
+	/// <param name="_Origin_X"></param>
+	/// <param name="_Origin_Y"></param>
+	/// <param name="_Destination_X"></param>
+	/// <param name="_Destination_Y"></param>
+	/// <param name="OriginRef"></param>
+	/// <param name="DestinationRef"></param>
+	Arc(TransportMode _transport,
+		double* _Origin_X,
+		double* _Origin_Y,
+		double* _Destination_X,
+		double* _Destination_Y,
+		int* OriginRef,
+		int* DestinationRef);
 
 	~Arc();
 
@@ -38,19 +50,20 @@ public:
 	/// <summary>
 	/// Function to retrieve origin node of the current arc.
 	/// </summary>
-	/// <returns>The origin node attribute</returns>
-	Node* getOrigin();
+	/// <returns>The origin node's reference attribute</returns>
+	int* getOrigin();
 
 	/// <summary>
 	/// Function to retrieve destination node of the current arc.
 	/// </summary>
-	/// <returns>The destination node attribute</returns>
-	Node* getDest();
+	/// <returns>The destination node's reference attribute</returns>
+	int* getDest();
 
 	/// <summary>
 	/// Function to retrieve length of arc.
 	/// </summary>
-	int* getLength();
+	/// <returns>The link's length between nodes</returns>
+	int getLength();
 
 	/// <summary>
 	/// Function to set transport mode.
@@ -62,13 +75,13 @@ public:
 	/// Function to set origin node.
 	/// </summary>
 	/// <param name="_n">Required origin node</param>
-	void setOrigin(Node* _n);
+	void setOrigin(int* _n);
 
 	/// <summary>
 	/// Function to set destination node.
 	/// </summary>
 	/// <param name="_n">Required destination node</param>
-	void setDest(Node* _n);
+	void setDest(int* _n);
 
 	/// <summary>
 	/// Function to set length.
@@ -78,7 +91,11 @@ public:
 
 private:
 	TransportMode t_Mode;	//Transport mode
-	Node* n_Origin;			//Origin destination node
-	Node* n_Dest;			//Destination node
-	int* length;			//Length of arc
+	double* _Origin_X,		//Origin X value
+		* _Origin_Y,		//Origin Y value
+		* _Destination_X,   //Destination X value
+		* _Destination_Y;	//Destination Y value
+	int	* _OriginRef,		//Origin reference number
+		* _DestinationRef,  //Destination reference number
+		length;			//Length of arc
 };

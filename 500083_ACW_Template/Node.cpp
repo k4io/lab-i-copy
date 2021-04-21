@@ -11,6 +11,16 @@ Node::Node(string name, int ref, double x, double y): m_name(name), m_ref(ref), 
 	//LOG_ENTRY_EXIT;
 }
 
+Arc* Node::getArc(int* locationReference)
+{
+	for (size_t i = 0; i < v_Links.size(); i++)
+	{
+		if (*v_Links[i]->getDest() == *locationReference
+			|| *v_Links[i]->getOrigin() == *locationReference)
+			return v_Links[i];
+	}
+}
+
 Node::~Node(void)
 {
 	

@@ -125,6 +125,42 @@ void Navigation::parseLinks(fstream* in, vector<Arc*>* nv_Links)
 	}
 }
 
+bool Navigation::canPass(TransportMode _t, Arc* _a)
+{
+	//get heirarchy and then return true or false 
+	//if the transport mode can pass through the 
+	//arc at some point within the heirarchy
+
+	/*
+	* Heirarchy:
+	* 
+	* 1. a rail or ship journey may only use Arcs of the corresponding mode;
+	* 2. a bus journey may use bus and ship Arcs, while a car journey may use car, bus and ship Arcs;
+	* 3. a bike journey may use bike Arcs and Arcs defined in 1 and 2;
+	* 4. a foot journey may use any Arc.
+	*/
+
+	//First rule (Rail & Ship)
+	if (_t == TransportMode::Rail && _a->t_Mode == TransportMode::Rail) return true;
+	if (_t == TransportMode::Ship && _a->t_Mode == TransportMode::Ship) return true;
+
+	//Second rule (Bus & Car)
+	if (_t == TransportMode::Bus && _a->t_Mode == TransportMode::Ship) return true;
+	if (_t == TransportMode::Bus && _a->t_Mode == TransportMode::Bus) return true;
+
+	if (_t == TransportMode::Car && _a->t_Mode == TransportMode::Ship) return true;
+	if (_t == TransportMode::Car && _a->t_Mode == TransportMode::Bus) return true;
+	if (_t == TransportMode::Car && _a->t_Mode == TransportMode::Car) return true;
+
+	//Third rule (bike)
+	if (_t == TransportMode::Bike && _a->t_Mode != TransportMode::Foot) return true;
+
+	//Fourth rule (foot)
+	if (_t == TransportMode::Foot && _a->t_Mode != TransportMode::ERROR) return true;
+
+	return false;
+}
+
 bool Navigation::ProcessCommand(const string& commandString)
 {
 	/*
@@ -164,7 +200,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 		std::string output = "MaxDist\n"
 			+ lStart->GetPlaceName() + ", "
 			+ lFinish->GetPlaceName() + ", "
-			+ to_string(RoundTo(largest, 3)) + "\n";
+			+ to_string(RoundTo(largest / 1000, 3)) + "\n";
 
 		_outFile << output << endl;
 		return true;
@@ -255,6 +291,8 @@ bool Navigation::ProcessCommand(const string& commandString)
 		//Example:
 		//Check <mode> 14601225 12321385 8611522 9361783
 
+		//DIDN'T TAKE INTO ACCOUNT HEIRARCHY DO THAT NEXT BEFORE FINDROUTE
+
 		string params = commandString.substr(6, commandString.size());
 		TransportMode _mode = determineTransportMode(params);
 
@@ -299,13 +337,13 @@ bool Navigation::ProcessCommand(const string& commandString)
 				if (*currentNode->v_Links[f]->_OriginRef == targetNode->m_ref
 					|| *currentNode->v_Links[f]->_DestinationRef == targetNode->m_ref)
 				{
-					if (currentNode->v_Links[f]->t_Mode == _mode)
+					if (canPass(_mode, currentNode->v_Links[f]))
 					{
 						targetIsLinked = true;
 						strout += ", PASS\n";
 						break;
 					}
-					else if (currentNode->v_Links[f]->t_Mode != _mode)
+					else
 					{
 						targetIsLinked = false;
 						strout += ", FAIL\n";
@@ -323,8 +361,9 @@ bool Navigation::ProcessCommand(const string& commandString)
 	}
 
 	else if (command.find("FindRoute") != string::npos) {
-
+		
 	}
+
 	else if (command.find("FindShortestRoute") != string::npos) {
 
 	}

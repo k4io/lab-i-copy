@@ -20,6 +20,7 @@ public:
 	Node* determineNode(int ref);
 	TransportMode determineTransportMode(string mode);
 	double RoundTo(double in, double decimalPlaces);
+	bool canPass(TransportMode _t, Arc* _a);
 
 private:
 	Node* m_node;

@@ -63,7 +63,7 @@ public:
 	/// Function to retrieve length of arc.
 	/// </summary>
 	/// <returns>The link's length between nodes</returns>
-	int getLength();
+	double getLength();
 
 	/// <summary>
 	/// Function to set transport mode.
@@ -87,7 +87,7 @@ public:
 	/// Function to set length.
 	/// </summary>
 	/// <param name="_n">Required length</param>
-	void setLen(int* _n);
+	void setLen(double* _n);
 
 private:
 	TransportMode t_Mode;	//Transport mode
@@ -95,7 +95,7 @@ private:
 		* _Origin_Y,		//Origin Y value
 		* _Destination_X,   //Destination X value
 		* _Destination_Y;	//Destination Y value
-	int	* _OriginRef,		//Origin reference number
-		* _DestinationRef,  //Destination reference number
-		length;			//Length of arc
+	int * _OriginRef,		//Origin reference number
+		* _DestinationRef;  //Destination reference number
+	double	length;			//Length of arc
 };

@@ -19,6 +19,7 @@ Arc* Node::getArc(int* locationReference)
 			|| *v_Links[i]->getOrigin() == *locationReference)
 			return v_Links[i];
 	}
+	return nullptr;
 }
 
 Node::~Node(void)

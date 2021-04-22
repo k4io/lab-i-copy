@@ -6,13 +6,13 @@ int* Arc::getOrigin() {  return _OriginRef; }
 
 int* Arc::getDest() { return _DestinationRef; }
 
-int Arc::getLength() { return length; }
+double Arc::getLength() { return length; }
 
 void Arc::setOrigin(int* _n) { _OriginRef = _n; }
 
 void Arc::setDest(int* _n) { _DestinationRef = _n; }
 
-void Arc::setLen(int* _n) {  length = *_n; }
+void Arc::setLen(double* _n) {  length = *_n; }
 
 void Arc::setTransportMode(TransportMode _t) {  t_Mode = _t; }
 
@@ -38,9 +38,7 @@ Arc::Arc(TransportMode _transport,
 	double v2 = (_Origin_Y - _Destination_Y);
 	double v3 = pow(v2, 2);
 	double v4 = sqrt(v1 + v3);
-	int _n = v4;
-
-
+	double _n = v4;
 
 	setLen(&_n);
 }

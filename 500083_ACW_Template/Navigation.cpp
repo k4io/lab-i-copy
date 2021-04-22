@@ -12,8 +12,9 @@
 
 using namespace std;
 
-Navigation::Navigation() : _outFile("Output.txt")
+Navigation::Navigation() : _outFile("Output.txt"), m_node(0), m_arc(0)
 {
+
 }
 
 Navigation::~Navigation()
@@ -36,6 +37,7 @@ TransportMode Navigation::determineTransportMode(string mode)
 	else if (mode.find("Bus") != string::npos) { return TransportMode::Bus; }
 	else if (mode.find("Rail") != string::npos) { return TransportMode::Rail; }
 	else if (mode.find("Ship") != string::npos) { return TransportMode::Ship; }
+	else return TransportMode::ERROR;
 }
 
 Node* Navigation::determineNode(int ref)
@@ -176,6 +178,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 			if (v_Arcs[i]->getLength() > record)
 				recordLink = v_Arcs[i];
 		}
+		if (!recordLink) return false;
 
 		string outStr = "MaxLink\n";
 		outStr += to_string(*recordLink->_OriginRef) + ", "
@@ -253,14 +256,7 @@ bool Navigation::ProcessCommand(const string& commandString)
 		//Check <mode> 14601225 12321385 8611522 9361783
 
 		string params = commandString.substr(6, commandString.size());
-		string strTMode = commandString.substr(0, params.find(' '));
-		TransportMode _mode{};
-		if (strTMode.find("Foot")) _mode = TransportMode::Foot;
-		if (strTMode.find("Bike")) _mode = TransportMode::Bike;
-		if (strTMode.find("Car"))  _mode = TransportMode::Car;
-		if (strTMode.find("Bus"))  _mode = TransportMode::Bus;
-		if (strTMode.find("Rail")) _mode = TransportMode::Rail;
-		if (strTMode.find("Ship")) _mode = TransportMode::Ship;
+		TransportMode _mode = determineTransportMode(params);
 
 		params = params.substr(4, params.size());
 
@@ -288,12 +284,44 @@ bool Navigation::ProcessCommand(const string& commandString)
 
 		for (size_t i = 0; i < targetDestinations.size(); i++)
 		{
-			for (size_t f = 0; f < targetDestinations[i]->v_Links.size(); f++)
+			if (i + 1 > targetDestinations.size() - 1) break;
+			Node* currentNode = targetDestinations[i];
+			Node* targetNode = targetDestinations[i + 1];
+			bool targetIsLinked = false;
+
+			strout += to_string(currentNode->m_ref) + ", "
+					+ to_string(targetNode->m_ref);
+
+			for (size_t f = 0; f < currentNode->v_Links.size(); f++)
 			{
 				//TO DO - DO THE THING HERE: https://i.imgur.com/jOP9ieo.png
+
+				if (*currentNode->v_Links[f]->_OriginRef == targetNode->m_ref
+					|| *currentNode->v_Links[f]->_DestinationRef == targetNode->m_ref)
+				{
+					if (currentNode->v_Links[f]->t_Mode == _mode)
+					{
+						targetIsLinked = true;
+						strout += ", PASS\n";
+						break;
+					}
+					else if (currentNode->v_Links[f]->t_Mode != _mode)
+					{
+						targetIsLinked = false;
+						strout += ", FAIL\n";
+						break;
+					}
+				}
+			}
+			if (!targetIsLinked)
+			{
+				break;
 			}
 		}
+		_outFile << strout << endl;
+		return true;
 	}
+
 	else if (command.find("FindRoute") != string::npos) {
 
 	}

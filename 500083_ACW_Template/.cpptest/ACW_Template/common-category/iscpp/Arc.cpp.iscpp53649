@@ -1,0 +1,6 @@
+fileName=C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+isCpp=
+compilerOpts=-I"C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\runtime\include" /ZI /W3 /Od /EHsc /RTC1 /MDd /fp:precise /Gd /GS /sdl /Oy- /Gm- /D_MBCS /D_MBCS /D_CRT_SECURE_NO_WARNINGS /Zc:wchar_t /Zc:forScope /Zc:inline /WX- /nologo /FC /permissive- /diagnostics:column -DPARASOFT_CPPTEST -I.
+compilerId=vc_14_2
+workingDir=C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\
+advancedOptionsHash=0

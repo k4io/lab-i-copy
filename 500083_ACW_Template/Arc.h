@@ -14,6 +14,7 @@
 
 //Standard includes
 #include <iostream>
+#include <math.h>
 
 
 using namespace structs;
@@ -24,70 +25,73 @@ public:
 	/// <summary>
 	/// Constructor for arc class.
 	/// </summary>
-	/// <param name="_transport"></param>
-	/// <param name="_Origin_X"></param>
-	/// <param name="_Origin_Y"></param>
-	/// <param name="_Destination_X"></param>
-	/// <param name="_Destination_Y"></param>
-	/// <param name="OriginRef"></param>
-	/// <param name="DestinationRef"></param>
-	Arc(TransportMode _transport,
-		double* _Origin_X,
-		double* _Origin_Y,
-		double* _Destination_X,
-		double* _Destination_Y,
-		int* OriginRef,
-		int* DestinationRef);
+	/// <param name="_transport"> - Transport mode</param>
+	/// <param name="_Origin_X"> - Pointer to origin x</param>
+	/// <param name="_Origin_Y"> - Pointer to origin y</param>
+	/// <param name="_Destination_X"> - Pointer to destination x</param>
+	/// <param name="_Destination_Y"> - Pointer to destination y</param>
+	/// <param name="OriginRef"> - Pointer to origin reference</param>
+	/// <param name="DestinationRef"> - Pointer to destination reference</param>
+	Arc(const TransportMode _transport,
+		const double* _Origin_X,
+		const double* _Origin_Y,
+		const double* _Destination_X,
+		const double* _Destination_Y,
+		const int* OriginRef,
+		const int* DestinationRef);
 
 	~Arc();
+
+	Arc& operator=(const Arc& ul);
+	Arc(const Arc& ul);
 
 	/// <summary>
 	/// Function to retrieve transport mode of the current arc.
 	/// </summary>
 	/// <returns>The transport mode attribute</returns>
-	TransportMode getTransportMode();
+	TransportMode getTransportMode() const;
 
 	/// <summary>
 	/// Function to retrieve origin node of the current arc.
 	/// </summary>
 	/// <returns>The origin node's reference attribute</returns>
-	int* getOrigin();
+	int* getOrigin() const;
 
 	/// <summary>
 	/// Function to retrieve destination node of the current arc.
 	/// </summary>
 	/// <returns>The destination node's reference attribute</returns>
-	int* getDest();
+	int* getDest() const;
 
 	/// <summary>
 	/// Function to retrieve length of arc.
 	/// </summary>
 	/// <returns>The link's length between nodes</returns>
-	double getLength();
+	double getLength() const;
 
 	/// <summary>
 	/// Function to set transport mode.
 	/// </summary>
-	/// <param name="_t">Required transport mode</param>
-	void setTransportMode(TransportMode _t);
+	/// <param name="_t"> - Required transport mode</param>
+	void setTransportMode(const TransportMode const _t);
 
 	/// <summary>
 	/// Function to set origin node.
 	/// </summary>
-	/// <param name="_n">Required origin node</param>
-	void setOrigin(int* _n);
+	/// <param name="_n"> - Required origin node</param>
+	void setOrigin(int* const _n);
 
 	/// <summary>
 	/// Function to set destination node.
 	/// </summary>
-	/// <param name="_n">Required destination node</param>
-	void setDest(int* _n);
+	/// <param name="_n"> - Required destination node</param>
+	void setDest(int* const _n);
 
 	/// <summary>
 	/// Function to set length.
 	/// </summary>
-	/// <param name="_n">Required length</param>
-	void setLen(double* _n);
+	/// <param name="_n"> - Required length</param>
+	void setLen(const double* const _n);
 
 private:
 	TransportMode t_Mode;	//Transport mode

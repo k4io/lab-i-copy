@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><ResultsSession>
+   <SessionData configName="500083 rule set" enabledAnalysis="Static" enabledHandlers="com.parasoft.xtest.checkers.api.standards.factory;com.parasoft.xtest.checkers.api.scope.factory;com.parasoft.xtest.checkers.api.metrics.factory" hasViols="true" header="??:ACW_Template:?? ??true??false??" runId="" startTime="1620047714759" tool="c++test">
+      <Authors>
+         <Author id="dev1" name="kai"/>
+      </Authors>
+      <Selection>
+         <Res id="ACW_Template/ACW_Template"/>
+      </Selection>
+      <XmlDataFiles file0="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\.parasoft.dat\.solutions\ACW_Template\session_results_report_xml\cs_violations.xml"/>
+   </SessionData>
+   <Locations>
+      <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp" loc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+      <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h" loc="ACW_Template/ACW_Template/Arc/Arc.h" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+      <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp" loc="ACW_Template/ACW_Template/Arc/Arc.cpp" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+      <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Node.cpp" loc="ACW_Template/ACW_Template/Node/Node.cpp" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+      <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h" loc="ACW_Template/ACW_Template/Navigation/Navigation.h" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+      <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Node.h" loc="ACW_Template/ACW_Template/Node/Node.h" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
+   </Locations>
+   <CodingStandards>
+      <HistoryData authTsks="2" authors="kai" cvdLn="923" startTime="1620047714759" totLn="923" totTsks="2"/>
+      <TestedFilesDetails>
+         <Total name="Suppressed / Total" supp="40" total="2">
+            <Project name="ACW_Template" supp="40" total="2">
+               <Res name="ACW_Wrapper.h" supp="0" total="0"/>
+               <Res name="Navigation" supp="17" total="0">
+                  <Res loc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" locType="sr" name="Navigation.cpp" supp="16" total="0"/>
+                  <Res loc="ACW_Template/ACW_Template/Navigation/Navigation.h" locType="sr" name="Navigation.h" supp="1" total="0"/>
+               </Res>
+               <Res name="Main.cpp" supp="0" total="0"/>
+               <Res name="Arc" supp="15" total="1">
+                  <Res loc="ACW_Template/ACW_Template/Arc/Arc.h" locType="sr" name="Arc.h" supp="1" total="1"/>
+                  <Res loc="ACW_Template/ACW_Template/Arc/Arc.cpp" locType="sr" name="Arc.cpp" supp="14" total="0"/>
+               </Res>
+               <Res name="Node" supp="8" total="1">
+                  <Res loc="ACW_Template/ACW_Template/Node/Node.cpp" locType="sr" name="Node.cpp" supp="8" total="0"/>
+                  <Res loc="ACW_Template/ACW_Template/Node/Node.h" locType="sr" name="Node.h" supp="0" total="1"/>
+               </Res>
+               <Res name="Structs.hpp" supp="0" total="0"/>
+            </Project>
+         </Total>
+      </TestedFilesDetails>
+   </CodingStandards>
+   <MetricsNormal/>
+   <MetricsDetailed/>
+</ResultsSession>

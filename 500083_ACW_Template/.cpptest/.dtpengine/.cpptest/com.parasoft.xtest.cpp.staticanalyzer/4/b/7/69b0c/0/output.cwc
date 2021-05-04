@@ -1,0 +1,240 @@
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '0' as the null pointer value
+<l>469
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>201
+<k>43
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>201
+<k>55
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Arc *)0' as the null pointer value
+<l>227
+<k>8
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>249
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>250
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>384
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>385
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>395
+<k>68
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Arc *)0' as the null pointer value
+<l>396
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '0' as the null pointer value
+<l>61
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OOP-34
+<b>Check for assignment to self in operator= in class 'Navigation'
+<l>28
+<k>33
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'str' declared but not used
+<l>322
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable '_mode' declared but not used
+<l>382
+<k>23
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'tempNode' declared but not used
+<l>395
+<k>68
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'currentArc' declared but not used
+<l>396
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '0' as the null pointer value
+<l>61
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h
+<c>OPT-13
+<b>Members 'v_Arcs, v_Nodes' of class 'Navigation' are declared in suboptimal order for memory layout
+<l>9
+<k>7
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'str' declared but not used
+<l>322
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable '_mode' declared but not used
+<l>382
+<k>23
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'tempNode' declared but not used
+<l>395
+<k>68
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'currentArc' declared but not used
+<l>396
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Node.h
+<c>OOP-11
+<b>Friend mechanism used for 'Navigation'
+<l>10
+<k>15
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h
+<c>OOP-11
+<b>Friend mechanism used for 'Navigation'
+<l>23
+<k>15
+<s>false
+<N>
+<f>
+<L>0

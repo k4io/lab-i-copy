@@ -1,0 +1,30 @@
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h
+<c>OPT-13
+<b>Members 'v_Arcs, v_Nodes' of class 'Navigation' are declared in suboptimal order for memory layout
+<l>9
+<k>7
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Node.h
+<c>OOP-11
+<b>Friend mechanism used for 'Navigation'
+<l>10
+<k>15
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h
+<c>OOP-11
+<b>Friend mechanism used for 'Navigation'
+<l>23
+<k>15
+<s>false
+<N>
+<f>
+<L>0

@@ -1,0 +1,33 @@
+file=C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+compiler=vc_14_2
+working_dir=C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template
+arg=cl.exe
+arg=-IC:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\runtime\include
+arg=/ZI
+arg=/Od
+arg=/EHsc
+arg=/RTC1
+arg=/MDd
+arg=/Gd
+arg=/GS
+arg=/Oy-
+arg=/Gm-
+arg=/D_MBCS
+arg=/D_MBCS
+arg=/D_CRT_SECURE_NO_WARNINGS
+arg=/Zc:wchar_t
+arg=/Zc:forScope
+arg=/Zc:inline
+arg=/nologo
+arg=/FC
+arg=/permissive-
+arg=/diagnostics:column
+arg=-DPARASOFT_CPPTEST
+arg=-I.
+arg=C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+env=PARASOFT_DOTTEST_DATA_DIR=C:\Users\kai\AppData\Local\Xtest\xtest.logs_20210503_115708\dottest.16728
+env=VSLS_SESSION_KEEPALIVE_INTERVAL=20
+env=XTEST_LOG_DIR=C:\Users\kai\AppData\Local\Xtest\xtest.logs_20210503_115708
+env=Path=C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\CMake\bin;C:\Program Files\dotnet\;C:\Users\kai\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\kai\AppData\Local\bin\NASM;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\kai\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\kai\AppData\Local\Programs\Python\Python36\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kai\AppData\Local\Microsoft\WindowsApps;C:\Users\kai\AppData\Local\GitHubDesktop\bin;C:\Users\kai\.dotnet\tools;C:\Program Files (x86)\Dr. Memory\bin\;C:\Users\kai\AppData\Local\atom\bin;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\CMake\bin;C:\Program Files\dotnet\;C:\Users\kai\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\kai\AppData\Local\bin\NASM;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\kai\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\kai\AppData\Local\Programs\Python\Python36\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kai\AppData\Local\Microsoft\WindowsApps;C:\Users\kai\AppData\Local\GitHubDesktop\bin;C:\Users\kai\.dotnet\tools;C:\Program Files (x86)\Dr. Memory\bin\;C:\Users\kai\AppData\Local\atom\bin;C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\plugins\com.parasoft.xtest.libs.vstudio.cpp\os\win32\x86;C:\Program Files (x86)\Parasoft\Test for Visual Studio\10.4\plugins\com.parasoft.xtest.application.vstudio.core\os\win32\x86;C:\Program Files (x86)\Parasoft\Test for Visual Studio\10.4\plugins\com.parasoft.xtest.coverage.vstudio.ui\os\win32\x86;C:\Program Files (x86)\Parasoft\Test for Visual Studio\10.4\plugins\com.parasoft.xtest.libs.vstudio\os\win32\x86;C:\Program Files (x86)\Parasoft\Test for Visual Studio\10.4\plugins\com.parasoft.xtest.results.vstudio.ui\os\win32\x86;C:\Program Files (x86)\Parasoft\Test for Visual Studio\10.4\plugins\com.parasoft.xtest.runtime.vstudio.core;C:\Program Files (x86)\Parasoft\Test for Visual Studio\10.4\plugins\com.parasoft.xtest.runtime.vstudio.core
+env=INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\Include\um;
+env=LIB=C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333\atlmfc\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\VS\lib\x86;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x86;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x86;

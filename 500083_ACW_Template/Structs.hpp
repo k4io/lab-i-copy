@@ -1,4 +1,4 @@
-
+#pragma once
 namespace structs
 {
 	enum class TransportMode 

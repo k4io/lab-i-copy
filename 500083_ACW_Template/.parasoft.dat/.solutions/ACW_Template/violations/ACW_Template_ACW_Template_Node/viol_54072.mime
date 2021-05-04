@@ -1,0 +1,86 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+StorageVersion: v1
+
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultsList path="ACW_Template/ACW_Template/Node/Node.h"><VersionInfos><StorageInfo ownerId="com.parasoft.xtest.checkers.api.execution" resultId="IExecutionViolation" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.execution" resultId="InsureViolation" ver="3"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.generation" resultId="IGenerationInfo" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.generation" resultId="IGenerationProjectInfo" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.scope" resultId="IScopeProjectInfo" ver="3"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricsViolation" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IFlowAnalysisViolation" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="ICodingStandardsViolation" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricEstimationInfo" ver="2"/><StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IDupCodeViolation" ver="2"/></VersionInfos></ResultsList>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-1614984852" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="519016871" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="28146579" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="1420510113" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-795350877" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="110769973" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-981577475" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="1771795906" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-1198879892" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="1510667804" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="2144680520" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="275324917" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="954130834" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-181066565" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="1277928985" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-1406875563" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="859870454" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="-1939063884" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="359825093" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="359825093" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="553424604" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="553424604" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="8552030" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="891979414" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="1359490505" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM
+
+<?xml version='1.0' encoding='UTF-8'?><ResultInfo resultId="ICodingStandardsViolation" ownerId="com.parasoft.xtest.checkers.api.standards" violKeys="null"><StdViol sev="3" ln="10" cat="OOP" hash="1039059558" tool="c++test" locType="sr" msg="Friend mechanism used for 'Navigation'" lang="cpp" rule="OOP-11" config="1" auth="kai" locStartln="10" locStartPos="14" locEndLn="10" locEndPos="15" locFile="ACW_Template/ACW_Template/Node/Node.h"/></ResultInfo>
+--G8keSZpTN1nM2mRFe0nPwavCs1QguDgaW5XFUM

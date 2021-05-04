@@ -1,0 +1,230 @@
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OOP-34
+<b>Check for assignment to self in operator= in class 'Arc'
+<l>3
+<k>19
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getTransportMode' is not inlined
+<l>16
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getOrigin' is not inlined
+<l>18
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getDest' is not inlined
+<l>20
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getLength' is not inlined
+<l>22
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'setOrigin' is not inlined
+<l>24
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'setDest' is not inlined
+<l>26
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'setTransportMode' is not inlined
+<l>30
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h
+<c>OOP-11
+<b>Friend mechanism used for 'Navigation'
+<l>23
+<k>15
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h
+<c>CODSTA-CPP-81
+<b>Arc: the percentage of getters and setters (100.00) is equal or higher than the threshold (100.00)
+<l>20
+<k>7
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>INIT-14
+<b>Assignment in constructor 'Arc' found. Use constructor initialization list instead
+<l>42
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>INIT-14
+<b>Assignment in constructor 'Arc' found. Use constructor initialization list instead
+<l>43
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>INIT-14
+<b>Assignment in constructor 'Arc' found. Use constructor initialization list instead
+<l>44
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>INIT-14
+<b>Assignment in constructor 'Arc' found. Use constructor initialization list instead
+<l>45
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>INIT-14
+<b>Assignment in constructor 'Arc' found. Use constructor initialization list instead
+<l>46
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>INIT-14
+<b>Assignment in constructor 'Arc' found. Use constructor initialization list instead
+<l>47
+<k>2
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getTransportMode' is not inlined
+<l>16
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getOrigin' is not inlined
+<l>18
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getDest' is not inlined
+<l>20
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'getLength' is not inlined
+<l>22
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'setTransportMode' is not inlined
+<l>30
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'setOrigin' is not inlined
+<l>24
+<k>11
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.cpp
+<c>OPT-23
+<b>Getter/setter method 'setDest' is not inlined
+<l>26
+<k>11
+<s>false
+<N>
+<f>
+<L>0

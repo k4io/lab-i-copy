@@ -2,7 +2,7 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>CODSTA-MCPP-04
 <b>Prefer 'nullptr' to '0' as the null pointer value
-<l>469
+<l>707
 <k>11
 <s>false
 <N>
@@ -62,6 +62,16 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>CODSTA-MCPP-04
 <b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
+<l>383
+<k>9
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
 <l>384
 <k>9
 <s>false
@@ -72,7 +82,7 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>CODSTA-MCPP-04
 <b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
-<l>385
+<l>412
 <k>9
 <s>false
 <N>
@@ -82,8 +92,8 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>CODSTA-MCPP-04
 <b>Prefer 'nullptr' to '(Node *)0' as the null pointer value
-<l>395
-<k>68
+<l>413
+<k>9
 <s>false
 <N>
 <f>
@@ -92,8 +102,18 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>CODSTA-MCPP-04
 <b>Prefer 'nullptr' to '(Arc *)0' as the null pointer value
-<l>396
-<k>14
+<l>450
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>CODSTA-MCPP-04
+<b>Prefer 'nullptr' to '(Arc *)0' as the null pointer value
+<l>539
+<k>13
 <s>false
 <N>
 <f>
@@ -131,19 +151,9 @@
 <->
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>OPT-02
-<b>Local variable '_mode' declared but not used
-<l>382
-<k>23
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
-<c>OPT-02
 <b>Local variable 'tempNode' declared but not used
-<l>395
-<k>68
+<l>449
+<k>61
 <s>false
 <N>
 <f>
@@ -152,8 +162,48 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>OPT-02
 <b>Local variable 'currentArc' declared but not used
-<l>396
-<k>14
+<l>450
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-33
+<b>Returned value from function 'findRoute' is passed by value
+<l>447
+<k>27
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'tempNode' declared but not used
+<l>538
+<k>61
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'currentArc' declared but not used
+<l>539
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-33
+<b>Returned value from function 'findAllRoutes' is passed by value
+<l>536
+<k>43
 <s>false
 <N>
 <f>
@@ -191,19 +241,9 @@
 <->
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>OPT-02
-<b>Local variable '_mode' declared but not used
-<l>382
-<k>23
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
-<c>OPT-02
 <b>Local variable 'tempNode' declared but not used
-<l>395
-<k>68
+<l>538
+<k>61
 <s>false
 <N>
 <f>
@@ -212,8 +252,48 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
 <c>OPT-02
 <b>Local variable 'currentArc' declared but not used
-<l>396
-<k>14
+<l>539
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h
+<c>OPT-33
+<b>Returned value from function 'findAllRoutes' is passed by value
+<l>123
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'tempNode' declared but not used
+<l>449
+<k>61
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.cpp
+<c>OPT-02
+<b>Local variable 'currentArc' declared but not used
+<l>450
+<k>13
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h
+<c>OPT-33
+<b>Returned value from function 'findRoute' is passed by value
+<l>134
+<k>16
 <s>false
 <N>
 <f>
@@ -232,7 +312,7 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h
 <c>OOP-11
 <b>Friend mechanism used for 'Navigation'
-<l>23
+<l>24
 <k>15
 <s>false
 <N>

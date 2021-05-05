@@ -8,6 +8,11 @@
 
 class Navigation
 {
+	struct Node_Path
+	{
+		vector<Node*> places;
+		int _length;
+	};
 	std::ofstream _outFile;
 
 public:
@@ -18,7 +23,7 @@ public:
 	/// Copy operator
 	/// </summary>
 	/// <param name="ul"> - copy object</param>
-	/// <returns>pointer to new object</returns>
+	/// <returns>reference to new object</returns>
 	Navigation& operator=(const Navigation& ul);
 	Navigation(const Navigation& ul);
 
@@ -94,6 +99,40 @@ public:
 	/// <param name="failedNodes"> - Reference to buffer for failed Nodes</param>
 	/// <param name="neighbors"> - Reference to buffer for neighboring Nodes</param>
 	void getNeighboringNodes(const Node* const n_master, vector<Node*> &failedNodes, vector<Node*>* const neighbors);
+
+	/// <summary>
+	/// Member function to get all neighboring
+	/// nodes connected via link if they can
+	/// pass with correct transport mode
+	/// </summary>
+	/// <param name="n_master"> - Master node to originate search from</param>
+	/// <param name="failedNodes"> - Reference to buffer for failed Nodes</param>
+	/// <param name="neighbors"> - Reference to buffer for neighboring Nodes</param>
+	/// <param name="_mode"> - Transport mode to use</param>
+	void getNeighboringNodes(const Node* const n_master, vector<Node*>& failedNodes, vector<Node*>* const neigbors, TransportMode _mode);
+
+	/// <summary>
+	/// Member function to find all possible paths
+	/// from one node to another with the correct
+	/// transport method (if any) (doesnt actually get ALL possible paths, just never the same stops)
+	/// </summary>
+	/// <param name="originNode"> - Node to search from</param>
+	/// <param name="destinationNode"> - Target node to search for</param>
+	/// <param name="_mode"> - Transport mode to use</param>
+	/// <returns>Vector array of encapsulated paths</returns>
+	vector<Node_Path> findAllRoutes(const Node* const originNode, const Node* const destinationNode, TransportMode const _mode);
+
+	/// <summary>
+	/// Member function that has the same functionality
+	/// as findAllRoutes but was made with the idea of
+	/// only looking for 1 path.
+	/// </summary>
+	/// <param name="originNode"> - Node to search from</param>
+	/// <param name="destinationNode"> - Target node to search for</param>
+	/// <param name="_mode"> - Transport mode to use</param>
+	/// <returns>Vector array of encapsulated nodes from 1 path</returns>
+	vector<Node*> findRoute(const Node* const originNode, const Node* const destinationNode, TransportMode const _mode);
+
 
 private:
 	Node* m_node;

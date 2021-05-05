@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><ResultsSession>
-   <SessionData configName="500083 rule set" enabledAnalysis="Static" enabledHandlers="com.parasoft.xtest.checkers.api.standards.factory;com.parasoft.xtest.checkers.api.scope.factory;com.parasoft.xtest.checkers.api.metrics.factory" hasViols="true" header="??:ACW_Template:?? ??true??false??" runId="" startTime="1620047714759" tool="c++test">
+   <SessionData configName="500083 rule set" enabledAnalysis="Static" enabledHandlers="com.parasoft.xtest.checkers.api.standards.factory;com.parasoft.xtest.checkers.api.scope.factory;com.parasoft.xtest.checkers.api.metrics.factory" hasViols="true" header="??:ACW_Template:?? ??true??false??" runId="" startTime="1620231647893" tool="c++test">
       <Authors>
          <Author id="dev1" name="kai"/>
       </Authors>
@@ -17,14 +17,14 @@
       <Loc fsPath="C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Node.h" loc="ACW_Template/ACW_Template/Node/Node.h" projPath="ACW_Template/ACW_Template" project="ACW_Template"/>
    </Locations>
    <CodingStandards>
-      <HistoryData authTsks="2" authors="kai" cvdLn="923" startTime="1620047714759" totLn="923" totTsks="2"/>
+      <HistoryData authTsks="2" authors="kai" cvdLn="1325" startTime="1620231647893" totLn="1325" totTsks="2"/>
       <TestedFilesDetails>
-         <Total name="Suppressed / Total" supp="40" total="2">
-            <Project name="ACW_Template" supp="40" total="2">
+         <Total name="Suppressed / Total" supp="47" total="2">
+            <Project name="ACW_Template" supp="47" total="2">
                <Res name="ACW_Wrapper.h" supp="0" total="0"/>
-               <Res name="Navigation" supp="17" total="0">
-                  <Res loc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" locType="sr" name="Navigation.cpp" supp="16" total="0"/>
-                  <Res loc="ACW_Template/ACW_Template/Navigation/Navigation.h" locType="sr" name="Navigation.h" supp="1" total="0"/>
+               <Res name="Navigation" supp="24" total="0">
+                  <Res loc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" locType="sr" name="Navigation.cpp" supp="21" total="0"/>
+                  <Res loc="ACW_Template/ACW_Template/Navigation/Navigation.h" locType="sr" name="Navigation.h" supp="3" total="0"/>
                </Res>
                <Res name="Main.cpp" supp="0" total="0"/>
                <Res name="Arc" supp="15" total="1">

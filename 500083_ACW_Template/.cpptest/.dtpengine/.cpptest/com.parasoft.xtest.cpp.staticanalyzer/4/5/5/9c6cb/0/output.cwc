@@ -9,6 +9,26 @@
 <f>
 <L>0
 <->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h
+<c>OPT-33
+<b>Returned value from function 'findAllRoutes' is passed by value
+<l>123
+<k>20
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Navigation.h
+<c>OPT-33
+<b>Returned value from function 'findRoute' is passed by value
+<l>134
+<k>16
+<s>false
+<N>
+<f>
+<L>0
+<->
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Node.h
 <c>OOP-11
 <b>Friend mechanism used for 'Navigation'
@@ -22,7 +42,7 @@
 <F>C:\Users\kai\source\repos\k4io\lab-i-copy\500083_ACW_Template\Arc.h
 <c>OOP-11
 <b>Friend mechanism used for 'Navigation'
-<l>23
+<l>24
 <k>15
 <s>false
 <N>

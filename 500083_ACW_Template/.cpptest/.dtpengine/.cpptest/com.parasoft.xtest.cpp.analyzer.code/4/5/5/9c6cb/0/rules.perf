@@ -15,7 +15,7 @@ C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MRM\MRM-46.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-35.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-01.rule|0
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\OPT\OPT-20.rule|12
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\OPT\OPT-20.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\OOP\OOP-38.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MRM\MRM-21.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-09.rule|0
@@ -61,7 +61,7 @@ C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MRM\MRM-15.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MRM\MRM-14.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MRM\MRM-13.rule|0
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-14.rule|15
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-14.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-11.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-06.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\EXCEPT\EXCEPT-01.rule|0
@@ -111,7 +111,7 @@ C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-01.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-80.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-77.rule|0
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-53.rule|0
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-53.rule|10
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-51.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-43.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-38.rule|0
@@ -120,7 +120,7 @@ C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-05.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-04.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-03.rule|0
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\PFO\PFO-08.rule|18
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\PFO\PFO-08.rule|41
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\PB\PB-27.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\PB\PB-09.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\OPT\OPT-19.rule|0
@@ -135,11 +135,11 @@ C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-04.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-52.rule|0
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\TEMPL\TEMPL-02.rule|0
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\OPT\OPT-03.rule|57
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MISRA2004\MISRA2004-13_3.rule|16
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-12.rule|24
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\OPT\OPT-03.rule|63
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\MISRA2004\MISRA2004-13_3.rule|17
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\INIT\INIT-12.rule|30
 C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-06_b.rule|31
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-06_a.rule|23
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-03.rule|22
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-02.rule|23
-C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-11.rule|42
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-06_a.rule|15
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-03.rule|16
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-MCPP\CODSTA-MCPP-02.rule|16
+C:\Program Files (x86)\Parasoft\C++test for Visual Studio\10.4\engine\dtp\rules\builtin\en\CODSTA-CPP\CODSTA-CPP-11.rule|40

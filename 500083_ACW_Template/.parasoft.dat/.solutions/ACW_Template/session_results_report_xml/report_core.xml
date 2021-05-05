@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><ResultsSession buildId="Default Project-2021-05-03" date="05/03/21 14:15:14" machine="DESKTOP-2512112" project="Default Project" tag="500083 rule set" time="2021-05-03T14:15:14+01:00" toolName="C++test" toolVer="2020.1.0.20200422B856" user="kai">
+<?xml version="1.0" encoding="UTF-8"?><ResultsSession buildId="Default Project-2021-05-05" date="05/05/21 17:20:47" machine="DESKTOP-2512112" project="Default Project" tag="500083 rule set" time="2021-05-05T17:20:47+01:00" toolName="C++test" toolVer="2020.1.0.20200422B856" user="kai">
    <TestConfig machine="DESKTOP-2512112" name="500083 rule set" pseudoUrl="c++test.user://500083 rule set" user="kai"/>
    <Authors>
       <Author id="dev1" name="kai"/>
@@ -19,13 +19,13 @@
    <mergePnt id="executedTestsDetails"/>
    <Scope>
       <ProjectInformations>
-         <ScopeProjectInfo fltFiles="9" fltLns="923" project="ACW_Template/ACW_Template" totFiles="9" totLns="923"/>
+         <ScopeProjectInfo fltFiles="9" fltLns="1325" project="ACW_Template/ACW_Template" totFiles="9" totLns="1325"/>
       </ProjectInformations>
    </Scope>
-   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:04">
+   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:06">
       <Goal mode="1" name="Static"/>
       <Projects>
-         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="9" checkedLns="923" name="ACW_Template" qfixErrs="0" suppErrs="40" totErrs="2" totFiles="9" totLns="923"/>
+         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="9" checkedLns="1325" name="ACW_Template" qfixErrs="0" suppErrs="47" totErrs="2" totFiles="9" totLns="1325"/>
       </Projects>
       <Rules>
          <RulesList>
@@ -579,7 +579,7 @@
          <Supp suppAuth="kai" suppCount="1" suppLine="45" suppLoc="ACW_Template/ACW_Template/Arc/Arc.cpp" suppMsg="Assignment in constructor 'Arc' found. Use constructor initialization list instead" suppRsn="Un-needed for mark scheme" suppRule="INIT-14"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="46" suppLoc="ACW_Template/ACW_Template/Arc/Arc.cpp" suppMsg="Assignment in constructor 'Arc' found. Use constructor initialization list instead" suppRsn="Un-needed for mark scheme" suppRule="INIT-14"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="47" suppLoc="ACW_Template/ACW_Template/Arc/Arc.cpp" suppMsg="Assignment in constructor 'Arc' found. Use constructor initialization list instead" suppRsn="Un-needed for mark scheme" suppRule="INIT-14"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="20" suppLoc="ACW_Template/ACW_Template/Arc/Arc.h" suppMsg="Arc: the percentage of getters and setters (100.00) is equal or higher than the threshold (100.00)" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-CPP-81"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="21" suppLoc="ACW_Template/ACW_Template/Arc/Arc.h" suppMsg="Arc: the percentage of getters and setters (100.00) is equal or higher than the threshold (100.00)" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-CPP-81"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="28" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Check for assignment to self in operator= in class 'Navigation'" suppRsn="Un-needed for mark scheme" suppRule="OOP-34"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="61" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="201" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
@@ -588,15 +588,22 @@
          <Supp suppAuth="kai" suppCount="1" suppLine="249" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="250" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="322" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'str' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="382" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable '_mode' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="383" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="384" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="385" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="395" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'tempNode' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="395" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="396" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'currentArc' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="396" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Arc *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
-         <Supp suppAuth="kai" suppCount="1" suppLine="469" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="412" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="413" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Node *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="447" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Returned value from function 'findRoute' is passed by value" suppRsn="Un-needed for mark scheme" suppRule="OPT-33"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="449" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'tempNode' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="450" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'currentArc' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="450" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Arc *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="536" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Returned value from function 'findAllRoutes' is passed by value" suppRsn="Un-needed for mark scheme" suppRule="OPT-33"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="538" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'tempNode' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="539" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Local variable 'currentArc' declared but not used" suppRsn="Un-needed for mark scheme" suppRule="OPT-02"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="539" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '(Arc *)0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="707" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.cpp" suppMsg="Prefer 'nullptr' to '0' as the null pointer value" suppRsn="Un-needed for mark scheme" suppRule="CODSTA-MCPP-04"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="9" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.h" suppMsg="Members 'v_Arcs, v_Nodes' of class 'Navigation' are declared in suboptimal order for memory layout" suppRsn="Un-needed for mark scheme" suppRule="OPT-13-DOWNGRADED"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="123" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.h" suppMsg="Returned value from function 'findAllRoutes' is passed by value" suppRsn="Un-needed for mark scheme" suppRule="OPT-33"/>
+         <Supp suppAuth="kai" suppCount="1" suppLine="134" suppLoc="ACW_Template/ACW_Template/Navigation/Navigation.h" suppMsg="Returned value from function 'findRoute' is passed by value" suppRsn="Un-needed for mark scheme" suppRule="OPT-33"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="36" suppLoc="ACW_Template/ACW_Template/Node/Node.cpp" suppMsg="Getter/setter method 'GetRefNum' is not inlined" suppRsn="Un-needed for mark scheme" suppRule="OPT-23"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="41" suppLoc="ACW_Template/ACW_Template/Node/Node.cpp" suppMsg="Getter/setter method 'GetX' is not inlined" suppRsn="Un-needed for mark scheme" suppRule="OPT-23"/>
          <Supp suppAuth="kai" suppCount="1" suppLine="47" suppLoc="ACW_Template/ACW_Template/Node/Node.cpp" suppMsg="Getter/setter method 'GetY' is not inlined" suppRsn="Un-needed for mark scheme" suppRule="OPT-23"/>
@@ -609,7 +616,7 @@
       <mergePnt id="historyStandards"/>
       <mergePnt id="testedFilesDetails"/>
    </CodingStandards>
-   <Metrics ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:04">
+   <Metrics ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:06">
       <mergePnt id="metrics"/>
    </Metrics>
    <AssocUrls/>
